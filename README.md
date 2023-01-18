@@ -93,7 +93,7 @@ src
 
 ### 설명
 ```
-└ DB
+└ DB (src/db/config/typeorm.config.ts)
     └ type : postgres
     └ port : 5432
     └ username : postgres
