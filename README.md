@@ -53,6 +53,43 @@ src
         └ 설문지를 삭제합니다.
 ```
 
+###DB
+```
+└ id
+  └ number
+  └ primaryKey
+  └ 설문지 id
+└ planning
+  └ number
+  └ 1번째 문항 (여행 갈 것인지)
+└ variety
+  └ number
+  └ 2번째 문항 (희망 여행 종류)
+└ destination
+  └ number
+  └ 3번째 문항 (희망 여행지)
+└ amount
+  └ number
+  └ 5번째 문항 (1인당 금액)
+└ matters
+  └ number []
+  └ 6번째 문항 (고려해야할 사항)
+└ preference
+  └ number
+  └ 7번째 문항 (선호도)
+└ gender
+  └ number
+  └ 7번째 문항 (성별)
+└ totalCount
+  └ number
+  └ 점수 측정
+  
+└ 컬럼 값 기준
+  └ -1 : 미응답
+  └ null : 1번 아니오 선택시 응답불가로 셋팅
+```
+
+
 ### 설명
 ```
 └ DB
@@ -61,9 +98,6 @@ src
     └ username : postgres
     └ password : 0000
     └ database : survey-travel
-    └ 컬럼 값 기준
-        └ -1 : 미응답 셋팅
-        └ null : 1번 아니오 선택시 응답불가로 셋팅
 
 └ 설치 및 실행
     └ npm i
